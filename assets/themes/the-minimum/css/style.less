@@ -7,7 +7,7 @@
 @main-bg: #ffffff;
 @subtle-bg: @base01;
 @main-font-color: @base03;
-@accent-color: @green;
+@accent-color: @turquoise;
 
 /* GLOBAL
 --------------------------------------------------------------------------------- */
@@ -51,10 +51,16 @@ pre {
 /* meta */
 .meta {}
 
+.clear-block {
+	clear: both;
+}
+
 
 /* HEADER
 --------------------------------------------------------------------------------- */
 .the-header {
+	background-color: #EEEEEE;
+	padding-top: 1px;
 	.logo {
 		font-family: @webfont;
 		margin: 0;
@@ -67,6 +73,10 @@ pre {
 			top: 2px;
 		}
 	}
+	.unit-head {
+		background-color: #EEEEEE;
+		height: 86px;
+	}
 } // .the-header
 
 /* MAIN
@@ -77,12 +87,10 @@ pre {
 			background: url('@{noise-100-90-5}');
 			background-repeat: repeat;
 			background-position: 0 0;
-			background-color: #BADA55;
+			background-color: #0084b4;
 			margin-bottom: @line-height / @em;
-			padding-top: (@line-height / @em);
-			padding-bottom: (@line-height / @em) ;
 			h1 {
-				color: @main-font-color;
+				color: #FFF;
 				margin-top: 0;
 				margin-bottom: 0;
 			}
@@ -129,7 +137,7 @@ pre {
 			}
 		}
 		ul, ol, dl { padding-left: 0; }
-		ul { list-style: square; }
+		ul { list-style-position: inside; }
 		ol { list-style: decimal; }
 		li, dt, dd {
 			h1, h2, h3, h4, h5, p, ul, ol, dl, blockquote, .hasGrid { margin-left: 0; margin-right: 0; }
@@ -224,9 +232,10 @@ pre {
 			vertical-align: middle;
 		}
 		a {
-			background-color: @green;
+			color: #FFF;
+			background-color: @turquoise;
 			float: left;
-			border: 1px solid darken(@green, 30%);
+			border: 1px solid darken(@turquoise, 30%);
 			padding: 3px 6px 3px 6px;
 			-webkit-border-radius: 3px;
 			-moz-border-radius: 3px;
@@ -249,21 +258,21 @@ pre {
 				-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
 				-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
 				box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-				background: darken(@green, 40%);
-				border: solid darken(@green, 40%);
+				background: darken(@turquoise, 40%);
+				border: solid darken(@turquoise, 40%);
 			}
 			&:hover {
-				background-color: darken(@green, 10%);
-				border: 1px solid darken(@green, 40%);
+				background-color: darken(@turquoise, 10%);
+				border: 1px solid darken(@turquoise, 40%);
 				span {
 					background-color: darken(#fafafa, 10%);
-					border: 1px solid darken(@green, 10%);
+					border: 1px solid darken(@turquoise, 10%);
 				}
 			}
 		}
 		span {
 			background-color: #fafafa;
-			border: 1px solid @green;
+			border: 1px solid @turquoise;
 			padding: 1px 5px;
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
@@ -281,7 +290,36 @@ pre {
 		}
 
 	}
+
 } // .page-post
+
+.sidebar {
+	width: 236px;
+	float: left;
+	margin: 15px;
+	ul {
+		list-style-type: none;
+	}
+	.social-media-icon {
+		background: url("/assets/themes/the-minimum/img/icon-sprite.webp") no-repeat;
+		float: left;
+		clear: both;
+	}
+	.social-media-link {
+		height: 50px;
+		padding-top: 6px;
+	}
+	.icon-twitter {
+		width: 50px;
+		height: 41px;
+		background-position: -0px -55px;
+	}
+	.icon-github {
+		width: 50px;
+		height: 50px;
+		background-position: -0px -0px;
+	}
+}
 
 /* FOOTER
 ----------------------------------------------- */
@@ -297,7 +335,7 @@ pre {
 			border: 0;
 		}
 		&:visited {
-			color: darken(@accent-color, 10%);
+			color: darken(@accent-color, 2%);
 			border: 0;
 		}
 		&:hover {

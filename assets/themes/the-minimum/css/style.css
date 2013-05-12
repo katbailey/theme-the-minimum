@@ -51,30 +51,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: junctionregularRegular, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
-  font-weight: bold;
+  font-family: "American Typewriter", junctionregularRegular, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
+  font-weight: normal;
 }
-h1, .h1 {
-  font-size: 42px;
+h1,
+.h1 {
+  font-size: 32px;
   line-height: 52px;
   margin-top: 52px;
   margin-bottom: 26px;
   letter-spacing: -1px;
 }
-h2, .h2 {
-  font-size: 42px;
+h2,
+.h2 {
+  font-size: 30px;
   line-height: 52px;
   margin-top: 52px;
   margin-bottom: 26px;
   letter-spacing: -1px;
 }
-h3, .h3 {
+h3,
+.h3 {
   font-size: 26px;
   line-height: 26px;
   margin-top: 26px;
   margin-bottom: 26px;
 }
-h4, .h4 {
+h4,
+.h4 {
   font-size: 20px;
   line-height: 26px;
   margin-top: 26px;
@@ -88,7 +92,9 @@ img {
   margin-top: 0;
   margin-bottom: 1.625em;
 }
-small, .small, aside {
+small,
+.small,
+aside {
   font-size: 0.75em;
 }
 .font-size-default {
@@ -210,10 +216,17 @@ pre {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 /* meta */
+.clear-block {
+  clear: both;
+}
 /* HEADER
 --------------------------------------------------------------------------------- */
+.the-header {
+  background-color: #EEEEEE;
+  padding-top: 1px;
+}
 .the-header .logo {
-  font-family: junctionregularRegular, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
+  font-family: "American Typewriter", junctionregularRegular, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
   margin: 0;
 }
 .the-header .logo a:visited {
@@ -226,19 +239,21 @@ pre {
   position: relative;
   top: 2px;
 }
+.the-header .unit-head {
+  background-color: #EEEEEE;
+  height: 86px;
+}
 /* MAIN
 --------------------------------------------------------------------------------- */
 .unit-article header {
   background: url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png');
   background-repeat: repeat;
   background-position: 0 0;
-  background-color: #BADA55;
+  background-color: #0084b4;
   margin-bottom: 1.625em;
-  padding-top: 1.625em;
-  padding-bottom: 1.625em;
 }
 .unit-article header h1 {
-  color: #2d2d2d;
+  color: #FFF;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -281,13 +296,13 @@ pre {
   margin-top: 0;
 }
 .unit-article a:link {
-  border-bottom: 1px dotted #99cc99;
+  border-bottom: 1px dotted #0084b4;
 }
 .unit-article a:visited {
-  border-bottom: 1px dotted #77bb77;
+  border-bottom: 1px dotted #005f81;
 }
 .unit-article a:hover {
-  border-bottom: 1px dotted #bbddbb;
+  border-bottom: 1px dotted #00a9e7;
 }
 .unit-article blockquote {
   border-left: 1em solid rgba(21, 25, 25, 0.8);
@@ -297,11 +312,13 @@ pre {
   margin-left: 0;
   margin-right: 0;
 }
-.unit-article ul, .unit-article ol, .unit-article dl {
+.unit-article ul,
+.unit-article ol,
+.unit-article dl {
   padding-left: 0;
 }
 .unit-article ul {
-  list-style: square;
+  list-style-position: inside;
 }
 .unit-article ol {
   list-style: decimal;
@@ -342,7 +359,8 @@ pre {
   margin-left: 0;
   margin-right: 0;
 }
-.unit-article p code, .unit-article li code {
+.unit-article p code,
+.unit-article li code {
   margin: 0 2px;
   padding: 2px 5px;
   white-space: nowrap;
@@ -372,13 +390,16 @@ pre {
 .unit-article .list-linear .list-head {
   margin-right: 4px;
 }
-.unit-article .list-category a, .unit-article .list-tag a {
+.unit-article .list-category a,
+.unit-article .list-tag a {
   border: 0 none;
 }
-.unit-article .list-category a:hover span, .unit-article .list-tag a:hover span {
+.unit-article .list-category a:hover span,
+.unit-article .list-tag a:hover span {
   background-color: #f99157;
 }
-.unit-article .list-category span, .unit-article .list-tag span {
+.unit-article .list-category span,
+.unit-article .list-tag span {
   background-color: #e25608;
   padding: 1px 5px;
   -webkit-border-radius: 10px;
@@ -447,9 +468,10 @@ pre {
   vertical-align: middle;
 }
 .layout-page .tag_box a {
-  background-color: #99cc99;
+  color: #FFF;
+  background-color: #0084b4;
   float: left;
-  border: 1px solid #448844;
+  border: 1px solid #00141b;
   padding: 3px 6px 3px 6px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -474,20 +496,20 @@ pre {
   -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-  background: #336633;
-  border: solid #336633;
+  background: #000000;
+  border: solid #000000;
 }
 .layout-page .tag_box a:hover {
-  background-color: #77bb77;
-  border: 1px solid #336633;
+  background-color: #005f81;
+  border: 1px solid #000000;
 }
 .layout-page .tag_box a:hover span {
   background-color: #e1e1e1;
-  border: 1px solid #77bb77;
+  border: 1px solid #005f81;
 }
 .layout-page .tag_box span {
   background-color: #fafafa;
-  border: 1px solid #99cc99;
+  border: 1px solid #0084b4;
   padding: 1px 5px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -503,6 +525,33 @@ pre {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
 }
+.sidebar {
+  width: 236px;
+  float: left;
+  margin: 15px;
+}
+.sidebar ul {
+  list-style-type: none;
+}
+.sidebar .social-media-icon {
+  background: url("/assets/themes/the-minimum/img/icon-sprite.webp") no-repeat;
+  float: left;
+  clear: both;
+}
+.sidebar .social-media-link {
+  height: 50px;
+  padding-top: 6px;
+}
+.sidebar .icon-twitter {
+  width: 50px;
+  height: 41px;
+  background-position: 0px -55px;
+}
+.sidebar .icon-github {
+  width: 50px;
+  height: 50px;
+  background-position: 0px 0px;
+}
 /* FOOTER
 ----------------------------------------------- */
 .the-footer {
@@ -513,15 +562,15 @@ pre {
   padding-bottom: 1.625em;
 }
 .the-footer a:link {
-  color: #99cc99;
+  color: #0084b4;
   border: 0;
 }
 .the-footer a:visited {
-  color: #77bb77;
+  color: #007daa;
   border: 0;
 }
 .the-footer a:hover {
-  color: #bbddbb;
+  color: #00a9e7;
   border: 0;
 }
 .the-footer ul {
@@ -811,7 +860,9 @@ pre {
   .the-header .nav-global {
     width: 43.125em;
   }
-  .unit-article .unit-head-inner, .unit-article .entry-content, .unit-article .misc-content {
+  .unit-article .unit-head-inner,
+  .unit-article .entry-content,
+  .unit-article .misc-content {
     width: 43.125em;
   }
   .unit-article .unit-foot-inner {
